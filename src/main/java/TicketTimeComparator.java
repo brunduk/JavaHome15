@@ -8,8 +8,7 @@ public class TicketTimeComparator implements Comparator<Ticket> {
         int flyTime2 = t2.getTimeTo() - t2.getTimeFrom();
         if (flyTime1 < flyTime2) {
             return -1;
-        }
-        else if (t1.getTimeTo() - t1.getTimeFrom() > t2.getTimeTo() - t2.getTimeFrom()) {
+        } else if (t1.getTimeTo() - t1.getTimeFrom() > t2.getTimeTo() - t2.getTimeFrom()) {
             return 1;
         } else {
             return 0;
